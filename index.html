@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Dentures | Elite Prosthetic Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { scroll-behavior: smooth; }
+        body { font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+        
+        /* Custom Smooth Gradient Background */
+        .hero-bg {
+            background: radial-gradient(circle at top right, #f0f9ff 0%, #ffffff 50%, #f1f5f9 100%);
+        }
+
+        /* Glassmorphism Navigation */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Floating Animation for Cards */
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .hover-lift:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(13, 148, 136, 0.15);
+        }
+
+        /* Button Pulse Effect */
+        .pulse-teal:hover {
+            box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 glass-nav py-5 px-8 flex justify-between items-center transition-all duration-300">
+        <div class="flex items-center space-x-2">
+            <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-teal-200">U</div>
+            <span class="text-xl font-extrabold tracking-tight text-slate-800">UNIVERSAL <span class="text-teal-600">DENTURES</span></span>
+        </div>
+        <div class="hidden md:flex space-x-10 text-sm font-semibold uppercase tracking-widest text-slate-600">
+            <a href="#home" class="hover:text-teal-600 transition-colors">Home</a>
+            <a href="#prosthetics" class="hover:text-teal-600 transition-colors">Catalog</a>
+            <a href="#contact" class="hover:text-teal-600 transition-colors">Connect</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20 relative overflow-hidden">
+        <div class="absolute top-20 left-10 w-64 h-64 bg-teal-100 rounded-full blur-[100px] opacity-60 animate-pulse"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-100 rounded-full blur-[120px] opacity-60"></div>
+
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-teal-700 uppercase bg-teal-50 rounded-full border border-teal-100">
+                Premium B2B Dental Laboratory
+            </span>
+            <h1 class="text-6xl md:text-8xl font-extrabold text-slate-900 leading-[1.1] tracking-tighter">
+                Crafting Smiles <br> <span class="text-teal-600">For Your Patients.</span>
+            </h1>
+            <p class="mt-8 text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+                Partnering with dentists worldwide to provide precision-milled, 
+                high-aesthetic prosthetics. Quality that mirrors nature.
+            </p>
+            
+            <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="mailto:shreedent@gmail.com" 
+                   class="pulse-teal bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl hover:bg-teal-600 transition-all duration-300 flex items-center justify-center gap-3 transform active:scale-95">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Email Order
+                </a>
+                
+                <a href="tel:9865905678" 
+                   class="pulse-teal bg-white border-2 border-slate-200 text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg hover:border-teal-500 hover:text-teal-600 transition-all duration-300 shadow-xl flex items-center justify-center gap-3 transform active:scale-95">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Call Support
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="prosthetics" class="py-32 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20 text-center" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900">Our Prosthetic Portfolio</h2>
+                <div class="w-24 h-1.5 bg-teal-500 mx-auto mt-6 rounded-full"></div>
+                <p class="mt-6 text-slate-500 text-lg">Engineered for durability. Designed for aesthetics.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="group bg-slate-50 rounded-[2.5rem] p-4 hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-64 overflow-hidden rounded-[2rem] shadow-inner">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=600" alt="Complete Denture" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-slate-800">Complete Denture</h4>
+                        <p class="mt-3 text-slate-500 leading-relaxed italic">Full-arch premium restorations with anatomical gum detailing.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-50 rounded-[2.5rem] p-4 hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative h-64 overflow-hidden rounded-[2rem]">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=600" alt="Partial Denture" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-slate-800">Partial Dentures</h4>
+                        <p class="mt-3 text-slate-500 leading-relaxed italic">Seamless chrome or acrylic solutions to complement natural teeth.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-50 rounded-[2.5rem] p-4 hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative h-64 overflow-hidden rounded-[2rem]">
+                        <img src="https://images.unsplash.com/photo-1445522471644-4869894e963c?auto=format&fit=crop&q=80&w=600" alt="Flexible Denture" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-slate-800">Flexible Dentures</h4>
+                        <p class="mt-3 text-slate-500 leading-relaxed italic">Nylon-based comfort for patients with metal sensitivities.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-50 rounded-[2.5rem] p-4 hover-lift" data-aos="fade-up" data-aos-delay="400">
+                    <div class="relative h-64 overflow-hidden rounded-[2rem]">
+                        <img src="https://images.unsplash.com/photo-1593054941018-d06987158309?auto=format&fit=crop&q=80&w=600" alt="Ceramic Denture" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-slate-800">Ceramic Dentures</h4>
+                        <p class="mt-3 text-slate-500 leading-relaxed italic">Lithium Disilicate restorations for ultimate translucent beauty.</p>
+                    </div>
+                </div>
+
+                <div class="group bg-slate-50 rounded-[2.5rem] p-4 hover-lift md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="500">
+                    <div class="relative h-64 overflow-hidden rounded-[2rem]">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=600" alt="Zirconia Denture" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-slate-800">Zirconia Dentures</h4>
+                        <p class="mt-3 text-slate-500 leading-relaxed italic">The "white steel" of dentistry. Strength meets digital precision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-white py-24 px-8 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-500 to-blue-500"></div>
+        <div class="max-w-5xl mx-auto text-center" data-aos="zoom-in">
+            <h2 class="text-5xl font-extrabold mb-8 tracking-tighter">Let's build a <br> lasting partnership.</h2>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 mt-16">
+                <div class="group">
+                    <p class="text-teal-500 font-bold uppercase text-xs tracking-[0.3em] mb-4">Direct Email</p>
+                    <a href="mailto:shreedent@gmail.com" class="text-3xl md:text-4xl font-light hover:text-teal-400 transition-colors border-b border-slate-700 pb-2">shreedent@gmail.com</a>
+                </div>
+                <div class="group">
+                    <p class="text-teal-500 font-bold uppercase text-xs tracking-[0.3em] mb-4">Direct Line</p>
+                    <a href="tel:9865905678" class="text-3xl md:text-4xl font-light hover:text-teal-400 transition-colors border-b border-slate-700 pb-2">+91 98659 05678</a>
+                </div>
+            </div>
+            
+            <div class="mt-24 pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm gap-6">
+                <p>© 2026 Universal Dentures Laboratory.</p>
+                <div class="flex space-x-8 uppercase font-bold tracking-widest text-[10px]">
+                    <a href="https://wa.me/919865905678" class="hover:text-white transition">WhatsApp Support</a>
+                    <a href="#" class="hover:text-white transition">Terms</a>
+                    <a href="#" class="hover:text-white transition">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 1000, // Animation speed
+            once: true,      // Animation only happens once
+            offset: 150      // Start animation when item is 150px into viewport
+        });
+
+        // Smooth Navbar Shrink on Scroll
+        window.onscroll = function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-3', 'shadow-xl');
+                nav.classList.remove('py-5');
+            } else {
+                nav.classList.add('py-5');
+                nav.classList.remove('py-3', 'shadow-xl');
+            }
+        };
+    </script>
+</body>
+</html>
